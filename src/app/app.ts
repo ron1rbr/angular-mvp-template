@@ -1,0 +1,11 @@
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { TranslocoPipe } from '@jsverse/transloco';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet, TranslocoPipe],
+  templateUrl: './app.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class App {}
